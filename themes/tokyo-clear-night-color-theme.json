@@ -9,7 +9,9 @@
         "parameter.declaration": {
             "foreground": "#e0af68"
         },
-        "parameter": "#91a3b0",
+        "parameter": {
+            "foreground": "#d9d4cd"
+        },
         "property.declaration": {
             "foreground": "#73daca"
         },
@@ -27,21 +29,13 @@
             "foreground": "#c0caf5"
         },
         "*.builtin": "#0db9d7",
-        "selfParameter": {
-            "foreground": "#eae0c8",
-            "italic": true
-        },
-        "clsParameter": {
-            "foreground": "#eae0c8",
-            "italic": true
-        },
         "*.decorator": {
             "foreground": "#bc8f8f",
             "italic": true
         },
         "enum": "#41a6b5",
         "enumMember": "#ffcba4",
-        "namespace": "#7dcfff",
+        "namespace": "#91a3b0",
         "variable.readonly": "#ff9e64",
         "variable.declaration.readonly": "#ff9e64",
         "*.deprecated": {
@@ -1682,43 +1676,12 @@
             }
         },
         {
-            "name": "Import keywords",
-            "scope": [
-                "keyword.control.import"
-            ],
-            "settings": {
-                "foreground": "#bb9af7"
-            }
-        },
-        {
-            "name": "Keyword arguments",
-            "scope": [
-                "variable.parameter.function-call.python"
-            ],
-            "settings": {
-                "foreground": "#91a3b0"
-            }
-        },
-        {
             "name": "Numbers",
             "scope": [
                 "constant.numeric"
             ],
             "settings": {
                 "foreground": "#f19cbb"
-            }
-        },
-        {
-            "name": "self / cls",
-            "scope": [
-                "variable.language.special.self",
-                "variable.language.special.cls",
-                "variable.parameter.function.language.special.self",
-                "variable.parameter.function.language.special.cls"
-            ],
-            "settings": {
-                "foreground": "#eae0c8",
-                "fontStyle": "italic"
             }
         }
     ],

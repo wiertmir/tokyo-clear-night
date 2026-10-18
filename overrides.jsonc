@@ -130,44 +130,19 @@
             "settings": { "foreground": "#bc8f8f", "fontStyle": "italic" }
         },
         {
-            // Tokyo Night colors import/from like modules (#7dcfff); make them keywords like "as".
-            "name": "Import keywords",
-            "scope": ["keyword.control.import"],
-            "settings": { "foreground": "#bb9af7" }
-        },
-        {
-            // Keyword arguments in calls (TextMate fallback). Cool Steel.
-            "name": "Keyword arguments",
-            "scope": ["variable.parameter.function-call.python"],
-            "settings": { "foreground": "#91a3b0" }
-        },
-        {
             "name": "Numbers",
             "scope": ["constant.numeric"],
             "settings": { "foreground": "#f19cbb" }
-        },
-        {
-            // TextMate fallback for self/cls. Sand Dune.
-            "name": "self / cls",
-            "scope": ["variable.language.special.self", "variable.language.special.cls",
-                      "variable.parameter.function.language.special.self", "variable.parameter.function.language.special.cls"],
-            "settings": { "foreground": "#eae0c8", "fontStyle": "italic" }
         }
     ],
     "semanticTokenColors": {
         // Pylance marks built-ins with "builtin", not "defaultLibrary", so Tokyo Night's rules miss them.
         "*.builtin": "#0db9d7",
-        // Pylance maps self/cls to a parameter scope (orange). Sand Dune, italic.
-        "selfParameter": { "foreground": "#eae0c8", "italic": true },
-        "clsParameter": { "foreground": "#eae0c8", "italic": true },
         "*.decorator": { "foreground": "#bc8f8f", "italic": true },
-        // Parameter uses and keyword arguments were beige (#d9d4cd). Cool Steel.
-        // Declarations keep Tokyo Night's orange via "parameter.declaration".
-        "parameter": "#91a3b0",
         "enum": "#41a6b5",
         "enumMember": "#ffcba4",
-        // Modules were the built-in color.
-        "namespace": "#7dcfff",
+        // Modules were the built-in color; Tokyo Night colors them #7dcfff. Cool Steel.
+        "namespace": "#91a3b0",
         // Tokyo Night colors every assignment like a keyword.
         "variable.declaration": "#c0caf5",
         // Keep constants orange when Pylance marks them read-only (beats the plain declaration rule).

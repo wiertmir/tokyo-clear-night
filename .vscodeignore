@@ -6,3 +6,4 @@ demo.ipynb
 images/
 python_demo.ipynb
 make_python_demo.py
+__pycache__/
