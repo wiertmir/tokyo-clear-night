@@ -23,6 +23,8 @@ def build():
     theme["colors"].update(over.get("colors", {}))
     theme["tokenColors"] += over.get("tokenColors", [])
     theme.setdefault("semanticTokenColors", {}).update(over.get("semanticTokenColors", {}))
+    if "semanticHighlighting" in over:
+        theme["semanticHighlighting"] = over["semanticHighlighting"]
 
     theme["name"] = "Tokyo Clear Night"
     theme["author"] = "wiertmir"
