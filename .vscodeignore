@@ -2,3 +2,5 @@ build.py
 overrides.jsonc
 *.vsix
 .gitignore
+demo.ipynb
+images/
