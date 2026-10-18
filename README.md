@@ -13,6 +13,8 @@ python3 build.py
 npx @vscode/vsce package
 ```
 
+`python3 make_python_demo.py` regenerates `python_demo.ipynb`, a notebook showing every Python element with its color. Update its tables when you change Python colors in `overrides.jsonc`.
+
 ## License
 
 MIT. Based on Tokyo Night by Enkia (MIT).
