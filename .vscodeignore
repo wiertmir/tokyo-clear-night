@@ -1,0 +1,4 @@
+build.py
+overrides.jsonc
+*.vsix
+.gitignore

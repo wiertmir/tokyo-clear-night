@@ -1,0 +1,69 @@
+// Tokyo Clear Night: color overrides applied on top of Tokyo Night.
+// Brighter UI chrome (Tokyo Night's defaults are quite dim).
+// Teal (#73daca) is Tokyo Night's own accent, used for highlights;
+// the selected file in Explorer is barely brighter than default text, on a noticeably lighter background.
+{
+    "colors": {
+        // General text & icons
+        "foreground": "#c0caf5",
+        "descriptionForeground": "#a9b1d6",
+        "icon.foreground": "#c0caf5",
+        "errorForeground": "#db4b4b",  // red (Tokyo Night's editorOverviewRuler.errorForeground); its default #515670 is grey
+
+        // Title bar & menus
+        "titleBar.activeForeground": "#c0caf5",
+        "titleBar.inactiveForeground": "#8089b3",
+        "menubar.selectionForeground": "#ffffff",
+        "menu.foreground": "#c0caf5",
+        "menu.selectionForeground": "#1a1b26",
+        "menu.selectionBackground": "#73daca",
+
+        // Breadcrumbs
+        "breadcrumb.foreground": "#a9b1d6",
+        "breadcrumb.focusForeground": "#c0caf5",
+        "breadcrumb.activeSelectionForeground": "#73daca",
+
+        // Sidebar / Explorer
+        "sideBar.foreground": "#c0caf5",
+        "sideBarTitle.foreground": "#c0caf5",
+        "sideBarSectionHeader.foreground": "#c0caf5",
+        "list.hoverForeground": "#ffffff",
+        "list.activeSelectionForeground": "#e3d1af",
+        "list.activeSelectionBackground": "#364a82",
+        "list.inactiveSelectionForeground": "#e0af68",
+        "list.inactiveSelectionBackground": "#2a3040",
+        "list.focusOutline": "#3b4261",
+
+        // Inline edit boxes (e.g. Explorer rename) & other text inputs
+        "input.background": "#242c48",
+        "input.foreground": "#c0caf5",
+        "input.border": "#2d5c46",
+        "focusBorder": "#2d5c4680",
+
+        // Activity bar (left icon strip)
+        "activityBar.foreground": "#c0caf5",
+        "activityBar.inactiveForeground": "#8089b3",
+        "activityBar.activeBorder": "#73daca",
+
+        // Tabs
+        "tab.activeForeground": "#c0caf5",
+        "tab.inactiveForeground": "#8089b3",
+        "tab.activeBorder": "#73daca",
+
+        // Scrollbars
+        "scrollbarSlider.background": "#7aa2f755",
+        "scrollbarSlider.hoverBackground": "#7aa2f777",
+        "scrollbarSlider.activeBackground": "#7aa2f7aa",
+
+        // Notebooks: lighter page behind darker cells
+        "notebook.editorBackground": "#262a3d",
+        "notebook.cellEditorBackground": "#16161e",
+        "notebook.cellBorderColor": "#3b4261",
+        "notebook.focusedEditorBorder": "#73daca80",
+        "notebook.focusedCellBorder": "#73daca",
+        "notebook.cellToolbarSeparator": "#3b4261",
+        "notebook.outputContainerBackgroundColor": "#2d3040"
+    },
+    "tokenColors": [],
+    "semanticTokenColors": {}
+}
