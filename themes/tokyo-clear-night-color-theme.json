@@ -9,9 +9,7 @@
         "parameter.declaration": {
             "foreground": "#e0af68"
         },
-        "parameter": {
-            "foreground": "#d9d4cd"
-        },
+        "parameter": "#a9b1d6",
         "property.declaration": {
             "foreground": "#73daca"
         },
@@ -29,15 +27,20 @@
             "foreground": "#c0caf5"
         },
         "*.builtin": "#0db9d7",
+        "selfParameter": "#ca7e89",
+        "clsParameter": "#ca7e89",
+        "selfParameter.declaration": "#cab094",
+        "clsParameter.declaration": "#cab094",
         "*.decorator": {
-            "foreground": "#bc8f8f",
+            "foreground": "#b59ba8",
             "italic": true
         },
+        "parameter.keywordArgument": "#e0af68",
         "enum": "#41a6b5",
         "enumMember": "#ffcba4",
         "namespace": "#91a3b0",
-        "variable.readonly": "#ff9e64",
-        "variable.declaration.readonly": "#ff9e64",
+        "variable.readonly": "#e1a58c",
+        "variable.declaration.readonly": "#e1a58c",
         "*.deprecated": {
             "strikethrough": true
         }
@@ -1671,7 +1674,7 @@
                 "punctuation.definition.decorator.python"
             ],
             "settings": {
-                "foreground": "#bc8f8f",
+                "foreground": "#b59ba8",
                 "fontStyle": "italic"
             }
         },
@@ -1682,6 +1685,26 @@
             ],
             "settings": {
                 "foreground": "#f19cbb"
+            }
+        },
+        {
+            "name": "self / cls in signature",
+            "scope": [
+                "variable.parameter.function.language.special.self",
+                "variable.parameter.function.language.special.cls"
+            ],
+            "settings": {
+                "foreground": "#cab094"
+            }
+        },
+        {
+            "name": "self / cls in body",
+            "scope": [
+                "variable.language.special.self",
+                "variable.language.special.cls"
+            ],
+            "settings": {
+                "foreground": "#ca7e89"
             }
         }
     ],

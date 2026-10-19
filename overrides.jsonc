@@ -124,30 +124,51 @@
             "settings": { "foreground": "#6f00ff" }
         },
         {
-            // TextMate fallback for decorators, including the "@". Rosy Taupe.
+            // TextMate fallback for decorators, including the "@". Rosy Taupe 35% toward plain text.
             "name": "Decorators",
             "scope": ["entity.name.function.decorator.python", "punctuation.definition.decorator.python"],
-            "settings": { "foreground": "#bc8f8f", "fontStyle": "italic" }
+            "settings": { "foreground": "#b59ba8", "fontStyle": "italic" }
         },
         {
             "name": "Numbers",
             "scope": ["constant.numeric"],
             "settings": { "foreground": "#f19cbb" }
+        },
+        {
+            // TextMate fallback for self/cls in signatures: Tokyo Night's orange, 40% toward plain text.
+            "name": "self / cls in signature",
+            "scope": ["variable.parameter.function.language.special.self", "variable.parameter.function.language.special.cls"],
+            "settings": { "foreground": "#cab094" }
+        },
+        {
+            // TextMate fallback for self/cls in bodies: Tokyo Night's red, muted (60% chroma, a bit darker; greying it hits the number pink).
+            "name": "self / cls in body",
+            "scope": ["variable.language.special.self", "variable.language.special.cls"],
+            "settings": { "foreground": "#ca7e89" }
         }
     ],
     "semanticTokenColors": {
         // Pylance marks built-ins with "builtin", not "defaultLibrary", so Tokyo Night's rules miss them.
         "*.builtin": "#0db9d7",
-        "*.decorator": { "foreground": "#bc8f8f", "italic": true },
+        // Pylance maps self/cls to parameter orange everywhere; match the TextMate fallbacks above.
+        "selfParameter": "#ca7e89",
+        "clsParameter": "#ca7e89",
+        "selfParameter.declaration": "#cab094",
+        "clsParameter.declaration": "#cab094",
+        "*.decorator": { "foreground": "#b59ba8", "italic": true },
+        // Tokyo Night's semantic "parameter" beige would hide its TextMate keyword-argument orange.
+        "parameter.keywordArgument": "#e0af68",
+        // Parameter uses: plain text, as Tokyo Night shows them (its semantic beige never applied there).
+        "parameter": "#a9b1d6",
         "enum": "#41a6b5",
         "enumMember": "#ffcba4",
         // Modules were the built-in color; Tokyo Night colors them #7dcfff. Cool Steel.
         "namespace": "#91a3b0",
         // Tokyo Night colors every assignment like a keyword.
         "variable.declaration": "#c0caf5",
-        // Keep constants orange when Pylance marks them read-only (beats the plain declaration rule).
-        "variable.readonly": "#ff9e64",
-        "variable.declaration.readonly": "#ff9e64",
+        // Read-only variables: constant orange 35% toward plain text (beats the plain declaration rule).
+        "variable.readonly": "#e1a58c",
+        "variable.declaration.readonly": "#e1a58c",
         "*.deprecated": { "strikethrough": true }
     }
 }
