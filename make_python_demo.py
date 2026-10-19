@@ -18,7 +18,7 @@ def c(color, text, style=""):
 SECTIONS = [
     ("Imports & modules", [
         (["import", "from", "as"], "#7dcfff", "", "keyword.control.import (Tokyo Night)"),
-        (["os", "re", "collections", "dataclasses"], "#91a3b0", "", "semantic module (Cool Steel)"),
+        (["os", "re", "collections", "dataclasses"], "#98a288", "", "semantic module (Cool Steel toward olive)"),
         (["Counter", "Enum"], "#45b1e8", "", "semantic class (Fresh Sky)"),
         (["dataclass", "field"], "#7aa2f7", "", "semantic function"),
     ], '''import os
@@ -232,7 +232,7 @@ READABILITY = [
 # (Tokyo Night element, example, color, style, [(Tokyo Clear Night element, example, color, style, rule)])
 COMPARISON = [
     ("Plain identifier (no scope)", "os  result", "#a9b1d6", "", [
-        ("Module", "os", "#91a3b0", "", "namespace"),
+        ("Module", "os", "#98a288", "", "namespace"),
         ("Variable", "result", "#c0caf5", "", "variable"),
         ("Parameter use", "who", "#a9b1d6", "", "parameter"),
         ("Class use", "Counter", "#45b1e8", "", "class"),

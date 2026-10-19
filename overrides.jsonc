@@ -145,6 +145,36 @@
             "name": "self / cls in body",
             "scope": ["variable.language.special.self", "variable.language.special.cls"],
             "settings": { "foreground": "#ca7e89" }
+        },
+        {
+            // Log files (VS Code's Log grammar). Errors were plain/green. #b31b1b 35% toward log text, then 20% brighter.
+            "name": "Log errors",
+            "scope": ["log.error", "log.exceptiontype"],
+            "settings": { "foreground": "#cc5a6c" }
+        },
+        {
+            // Stack-trace lines ("at ...") were string green. #d0417e 40% toward log text.
+            "name": "Log stack traces",
+            "scope": ["log.exception"],
+            "settings": { "foreground": "#ba699e" }
+        },
+        {
+            // Warnings were a dim maroon that would read like errors. Tokyo Night yellow.
+            "name": "Log warnings",
+            "scope": ["log.warning"],
+            "settings": { "foreground": "#e0af68" }
+        },
+        {
+            // Info was a dim teal (#449dab); same hue, brighter.
+            "name": "Log info",
+            "scope": ["log.info"],
+            "settings": { "foreground": "#58ccde" }
+        },
+        {
+            // Numbers, GUIDs, hashes, URLs and dotted names were constant orange; log files only. Sand Dune halfway to log text (#9aa5ce).
+            "name": "Log constants",
+            "scope": ["log.constant", "text.log constant.language"],
+            "settings": { "foreground": "#c2c2cb" }
         }
     ],
     "semanticTokenColors": {
@@ -162,8 +192,8 @@
         "parameter": "#a9b1d6",
         "enum": "#41a6b5",
         "enumMember": "#ffcba4",
-        // Modules were the built-in color; Tokyo Night colors them #7dcfff. Cool Steel.
-        "namespace": "#91a3b0",
+        // Modules were the built-in color; Tokyo Night colors them #7dcfff. Cool Steel 50% toward olive.
+        "namespace": "#98a288",
         // Tokyo Night colors every assignment like a keyword.
         "variable.declaration": "#c0caf5",
         // Read-only variables: constant orange 35% toward plain text (beats the plain declaration rule).

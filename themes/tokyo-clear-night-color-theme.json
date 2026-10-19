@@ -38,7 +38,7 @@
         "parameter.keywordArgument": "#e0af68",
         "enum": "#41a6b5",
         "enumMember": "#ffcba4",
-        "namespace": "#91a3b0",
+        "namespace": "#98a288",
         "variable.readonly": "#e1a58c",
         "variable.declaration.readonly": "#e1a58c",
         "*.deprecated": {
@@ -1705,6 +1705,53 @@
             ],
             "settings": {
                 "foreground": "#ca7e89"
+            }
+        },
+        {
+            "name": "Log errors",
+            "scope": [
+                "log.error",
+                "log.exceptiontype"
+            ],
+            "settings": {
+                "foreground": "#cc5a6c"
+            }
+        },
+        {
+            "name": "Log stack traces",
+            "scope": [
+                "log.exception"
+            ],
+            "settings": {
+                "foreground": "#ba699e"
+            }
+        },
+        {
+            "name": "Log warnings",
+            "scope": [
+                "log.warning"
+            ],
+            "settings": {
+                "foreground": "#e0af68"
+            }
+        },
+        {
+            "name": "Log info",
+            "scope": [
+                "log.info"
+            ],
+            "settings": {
+                "foreground": "#58ccde"
+            }
+        },
+        {
+            "name": "Log constants",
+            "scope": [
+                "log.constant",
+                "text.log constant.language"
+            ],
+            "settings": {
+                "foreground": "#c2c2cb"
             }
         }
     ],

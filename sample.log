@@ -1,0 +1,35 @@
+2026-10-19 09:14:02.118 +09:00 [INF] Starting up TokyoNight.Api 2.4.1 on host night-web-01 (PID 48213)
+2026-10-19 09:14:02.131 +09:00 [VRB] Loaded configuration source appsettings.json (Optional: false, ReloadOnChange: true)
+2026-10-19 09:14:02.133 +09:00 [VRB] Loaded configuration source appsettings.Production.json (Optional: true, ReloadOnChange: true)
+2026-10-19 09:14:02.204 +09:00 [DBG] Hosting environment: Production; content root: /srv/tokyo-night/api
+2026-10-19 09:14:02.517 +09:00 [INF] Now listening on: http://0.0.0.0:8080
+2026-10-19 09:14:02.518 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-19 09:14:07.902 +09:00 [INF] HTTP GET /api/cities/tokyo responded 200 in 18.4213 ms
+2026-10-19 09:14:08.015 +09:00 [DBG] Cache hit for key "city:tokyo" (TTL 300 s, Size 2048 bytes)
+2026-10-19 09:14:09.120 +09:00 [DBG] Executing query on connection 0x7FFA3C21 with timeout 30 s: SELECT * FROM "Cities" WHERE "Population" > 1000000
+2026-10-19 09:14:09.161 +09:00 [INF] Fetched 12 cities in 41 ms; FromCache: false, Truncated: null
+2026-10-19 09:14:11.487 +09:00 [INF] Order {"Id": 1042, "City": "Osaka", "Items": 3, "Total": 129.95, "Paid": true} created by mirek
+2026-10-19 09:14:13.006 +09:00 [WRN] Slow request: POST /api/orders took 2381 ms (threshold 1000 ms)
+2026-10-19 09:14:13.214 +09:00 [WRN] Retrying call to https://weather.example.com/v1/forecast?city=tokyo (attempt 2 of 3) after 500 ms
+2026-10-19 09:14:14.731 +09:00 [ERR] Failed to fetch forecast for tokyo from weather.example.com
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 503 (Service Unavailable).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at TokyoNight.Api.Weather.ForecastClient.GetAsync(String city, CancellationToken ct) in /src/TokyoNight.Api/Weather/ForecastClient.cs:line 57
+   at TokyoNight.Api.Weather.ForecastService.RefreshAsync(String city) in /src/TokyoNight.Api/Weather/ForecastService.cs:line 112
+2026-10-19 09:14:15.002 +09:00 [INF] Background job a1b2c3d completed; Processed: 512, Skipped: 0, Failed: 3
+2026-10-19 09:14:21.660 +09:00 [ERR] Unhandled exception while processing request 0HN7KQ3V2J1L8:00000004
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at TokyoNight.Api.Cities.CityRepository.GetCapital(String country) in /src/TokyoNight.Api/Cities/CityRepository.cs:line 88
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2026-10-19 09:14:30.118 +09:00 [WRN] Health check "database" degraded: pool usage 92% (46 of 50 connections)
+2026-10-19 09:14:42.907 +09:00 [FTL] Database connection lost; shutting down
+Npgsql.NpgsqlException: Exception while reading from stream
+ ---> System.TimeoutException: Timeout during reading attempt
+   at Npgsql.Internal.NpgsqlReadBuffer.Ensure(Int32 count, Boolean async)
+   at Npgsql.NpgsqlConnector.ReadMessage(Boolean async)
+   --- End of inner exception stack trace ---
+   at TokyoNight.Api.Program.Main(String[] args) in /src/TokyoNight.Api/Program.cs:line 34
+2026-10-19 09:14:42.951 +09:00 [INF] Application is shutting down...
