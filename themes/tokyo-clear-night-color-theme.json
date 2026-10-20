@@ -29,13 +29,13 @@
         "*.builtin": "#0db9d7",
         "selfParameter": "#ca7e89",
         "clsParameter": "#ca7e89",
-        "selfParameter.declaration": "#cab094",
-        "clsParameter.declaration": "#cab094",
+        "selfParameter.declaration": "#e0af68",
+        "clsParameter.declaration": "#e0af68",
         "*.decorator": {
             "foreground": "#b59ba8",
             "italic": true
         },
-        "parameter.keywordArgument": "#e0af68",
+        "parameter.keywordArgument": "#cab094",
         "enum": "#41a6b5",
         "enumMember": "#ffcba4",
         "namespace": "#98a288",
@@ -1694,7 +1694,7 @@
                 "variable.parameter.function.language.special.cls"
             ],
             "settings": {
-                "foreground": "#cab094"
+                "foreground": "#e0af68"
             }
         },
         {

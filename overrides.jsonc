@@ -135,10 +135,10 @@
             "settings": { "foreground": "#f19cbb" }
         },
         {
-            // TextMate fallback for self/cls in signatures: Tokyo Night's orange, 40% toward plain text.
+            // TextMate fallback for self/cls in signatures: Tokyo Night's orange (swapped with keyword arguments).
             "name": "self / cls in signature",
             "scope": ["variable.parameter.function.language.special.self", "variable.parameter.function.language.special.cls"],
-            "settings": { "foreground": "#cab094" }
+            "settings": { "foreground": "#e0af68" }
         },
         {
             // TextMate fallback for self/cls in bodies: Tokyo Night's red, muted (60% chroma, a bit darker; greying it hits the number pink).
@@ -183,11 +183,11 @@
         // Pylance maps self/cls to parameter orange everywhere; match the TextMate fallbacks above.
         "selfParameter": "#ca7e89",
         "clsParameter": "#ca7e89",
-        "selfParameter.declaration": "#cab094",
-        "clsParameter.declaration": "#cab094",
+        "selfParameter.declaration": "#e0af68",
+        "clsParameter.declaration": "#e0af68",
         "*.decorator": { "foreground": "#b59ba8", "italic": true },
         // Tokyo Night's semantic "parameter" beige would hide its TextMate keyword-argument orange.
-        "parameter.keywordArgument": "#e0af68",
+        "parameter.keywordArgument": "#cab094", // Tokyo Night's orange, 40% toward plain text
         // Parameter uses: plain text, as Tokyo Night shows them (its semantic beige never applied there).
         "parameter": "#a9b1d6",
         "enum": "#41a6b5",
