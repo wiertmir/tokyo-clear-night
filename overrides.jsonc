@@ -199,6 +199,28 @@
         // Read-only variables: constant orange 35% toward plain text (beats the plain declaration rule).
         "variable.readonly": "#e1a58c",
         "variable.declaration.readonly": "#e1a58c",
+        // Rust (rust-analyzer): std functions/macros stay function blue instead of the std-library cyan.
+        "function.defaultLibrary": "#7aa2f7",
+        "method.defaultLibrary": "#7aa2f7",
+        "macro.defaultLibrary": "#7aa2f7",
+        // const/static/enum variants were swallowed by variable.declaration; read-only orange as in Python.
+        "const": "#e1a58c",
+        "const.declaration": "#e1a58c",
+        "static": "#e1a58c",
+        "static.declaration": "#e1a58c",
+        "constParameter": "#e1a58c",
+        "enumMember.declaration": "#ffcba4",
+        // Self / self, as in Python.
+        "selfKeyword": "#ca7e89",
+        "selfTypeKeyword": "#ca7e89",
+        "selfKeyword.declaration": "#e0af68",
+        "property": "#7dcfff",
+        "property.declaration": "#73daca",
+        "builtinAttribute": { "foreground": "#b59ba8", "italic": true },
+        "decorator": { "foreground": "#b59ba8", "italic": true },
+        "derive": { "foreground": "#b59ba8", "italic": true },
+        "decorator.defaultLibrary": { "foreground": "#b59ba8", "italic": true },
+        "derive.defaultLibrary": { "foreground": "#b59ba8", "italic": true },
         "*.deprecated": { "strikethrough": true }
     }
 }

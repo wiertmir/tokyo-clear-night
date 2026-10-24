@@ -354,6 +354,22 @@ def proposal_md():
     )
 
 
+PALETTE = [
+    ("Amber", "#ffc107", "starship auto-mode line"), ("Blush", "#f5c2e7", "starship git branch"),
+    ("Green", "#55e755", "furthest from everything"), ("Spring", "#55e7a3", ""), ("Indigo", "#5555e7", ""),
+    ("Lime", "#d3e755", ""), ("Magenta", "#e755dd", ""), ("Cream", "#eaf094", ""), ("Orchid", "#f094e3", ""),
+    ("Azure", "#5572e7", ""), ("Mint", "#79ec81", ""), ("Raspberry", "#e75599", ""),
+]
+
+
+def palette_md():
+    rows = "\n".join(f"| {c(col, n)} | <code>{col}</code> | {note} |" for n, col, note in PALETTE)
+    return ("# 12 unused colors\n\nFree colors for new rules, each at least 19 CIELAB units from every foreground the theme uses. "
+            "The first two are from your starship prompt (amber is the auto-mode line, pink the git branch); the other starship colors "
+            "(blue, teal, yellow) are within 14 of colors already used.\n\n"
+            f"| Color | Hex | Note |\n|---|---|---|\n{rows}")
+
+
 def cell(kind, src, i):
     base = {"cell_type": kind, "id": f"cell-{i}", "metadata": {}, "source": src}
     return base | ({"execution_count": None, "outputs": []} if kind == "code" else {})
@@ -374,6 +390,7 @@ for title, items, code in SECTIONS:
     cells += [("markdown", legend(title, items)), ("code", code)]
 cells.append(("markdown", proposal_md()))
 cells.append(("markdown", comparison_md()))
+cells.append(("markdown", palette_md()))
 
 nb = {
     "cells": [cell(k, s, i) for i, (k, s) in enumerate(cells)],

@@ -10,9 +10,7 @@
             "foreground": "#e0af68"
         },
         "parameter": "#a9b1d6",
-        "property.declaration": {
-            "foreground": "#73daca"
-        },
+        "property.declaration": "#73daca",
         "property.defaultLibrary": {
             "foreground": "#2ac3de"
         },
@@ -41,6 +39,39 @@
         "namespace": "#98a288",
         "variable.readonly": "#e1a58c",
         "variable.declaration.readonly": "#e1a58c",
+        "function.defaultLibrary": "#7aa2f7",
+        "method.defaultLibrary": "#7aa2f7",
+        "macro.defaultLibrary": "#7aa2f7",
+        "const": "#e1a58c",
+        "const.declaration": "#e1a58c",
+        "static": "#e1a58c",
+        "static.declaration": "#e1a58c",
+        "constParameter": "#e1a58c",
+        "enumMember.declaration": "#ffcba4",
+        "selfKeyword": "#ca7e89",
+        "selfTypeKeyword": "#ca7e89",
+        "selfKeyword.declaration": "#e0af68",
+        "property": "#7dcfff",
+        "builtinAttribute": {
+            "foreground": "#b59ba8",
+            "italic": true
+        },
+        "decorator": {
+            "foreground": "#b59ba8",
+            "italic": true
+        },
+        "derive": {
+            "foreground": "#b59ba8",
+            "italic": true
+        },
+        "decorator.defaultLibrary": {
+            "foreground": "#b59ba8",
+            "italic": true
+        },
+        "derive.defaultLibrary": {
+            "foreground": "#b59ba8",
+            "italic": true
+        },
         "*.deprecated": {
             "strikethrough": true
         }

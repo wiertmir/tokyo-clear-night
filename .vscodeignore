@@ -8,3 +8,7 @@ python_demo.ipynb
 make_python_demo.py
 __pycache__/
 sample.log
+rust_demo/
+rust_demo.ipynb
+make_rust_demo.py
+tokenize_rust.js
