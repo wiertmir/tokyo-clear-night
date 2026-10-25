@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trait color proposal</title>
+<style>
+:root{--bg:#1a1b26;--fg:#c0caf5;--mut:#7982a9;--line:#2f3146;--h:#8fb3ad;--h2:#85b09a}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:15px;margin:32px 0 4px;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+p{margin:0 0 12px;color:var(--mut)}
+code,pre{font:14px/1.6 ui-monospace,monospace}
+.sw{display:flex;gap:12px;flex-wrap:wrap}
+.chip{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.chip i{width:28px;height:28px;border-radius:6px;background:var(--c);flex:none}
+.chip span{display:block;color:var(--mut);font-size:12px}
+.row{display:flex;gap:28px;flex-wrap:wrap;align-items:baseline;font:20px ui-monospace,monospace}
+.row small{font:12px system-ui;color:var(--mut);display:block}
+.t{font-style:italic;color:var(--h)}
+pre{margin:0;padding:16px;border:1px solid var(--line);border-radius:10px;overflow:auto;background:#16161e}
+.kw{color:#89ddff}.ty{color:#45b1e8}.sd{color:#2ac3de}.tl{color:#43b3ae}.fn{color:#7aa2f7}.b{font-weight:700}.at0{color:#b59ba8;font-style:italic}.at{color:#cc6a3d;font-style:italic}.s{color:#9ece6a}.m0{color:#7aa2f7}.m1{color:#55e7a3}.bl{color:#ff9e64}.rt{color:#bc8f8f}.ll{color:#d1e231}.pp{color:#ffc0cb}.lg{color:#eedc82}.num{color:#f19cbb}.tan{color:#e0af68}.se{color:#ca7e89}
+.bar{position:relative;height:28px;background:var(--line);border-radius:6px;margin:6px 0 14px}
+.bar b{position:absolute;inset:0 auto 0 0;border-radius:6px;background:var(--c);display:flex;align-items:center;padding-left:10px;color:#111;font-size:13px}
+.bar u{position:absolute;top:-4px;bottom:-4px;width:2px;background:#ff9e64}
+.bar em{position:absolute;top:-22px;transform:translateX(-50%);font:11px system-ui;color:#ff9e64;font-style:normal}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:600px){.cols{grid-template-columns:1fr}}
+</style></head><body><main>
+<h1>Trait names: <span class="t">#8fb3ad</span> italic (revised)</h1>
+<p>Proposal for <code>"interface": { "foreground": "#8fb3ad", "italic": true }</code> (rust-analyzer's token for traits). Shown on Tokyo Clear Night <code>#1a1b26</code>.</p>
+
+<h2>Why it reads as vague</h2>
+<p>A desaturated sea-mist grey-green, hazy rather than crisp. Concrete types stay saturated; abstractions get the muted, in-between color. The first proposal, a heather purple, was too close to the italic purple of <code>async</code>, <code>mut</code> and <code>pub</code> (<code>#9d7cd8</code>); this one keeps clear of every purple.</p>
+<div class="row">
+  <div><span class="ty">Struct</span><small>struct / class #45b1e8</small></div>
+  <div><span class="sd">HashMap</span><small>std types #2ac3de</small></div>
+  <div><span class="t">Describe</span><small>trait #8fb3ad italic</small></div>
+  <div><span style="color:#9d7cd8;font-style:italic">async</span><small>async #9d7cd8 italic</small></div>
+  <div><span class="t">Display</span><small>std trait, same color</small></div>
+</div>
+
+<h2>Replaces</h2>
+<p>Own traits are teal <code>#43b3ae</code>, the same as type aliases and parameters. Std traits are cyan <code>#2ac3de</code>, the same as every other std item.</p>
+<div class="cols">
+<pre><small style="color:var(--mut)">Now</small>
+<span class="kw">trait</span> <span class="tl">Describe</span> {
+    <span class="kw">fn</span> <span class="fn">describe</span>(&amp;<span class="kw">self</span>) -&gt; String;
+}
+<span class="kw">impl</span> <span class="sd">Display</span> <span class="kw">for</span> <span class="ty">City</span> {}
+<span class="kw">#[derive(</span><span class="sd">Clone</span>, <span class="sd">PartialOrd</span><span class="kw">)]</span></pre>
+<pre><small style="color:var(--mut)">Proposed</small>
+<span class="kw">trait</span> <span class="t">Describe</span> {
+    <span class="kw">fn</span> <span class="fn">describe</span>(&amp;<span class="kw">self</span>) -&gt; String;
+}
+<span class="kw">impl</span> <span class="t">Display</span> <span class="kw">for</span> <span class="ty">City</span> {}
+<span class="kw">#[derive(</span><span class="t">Clone</span>, <span class="t">PartialOrd</span><span class="kw">)]</span></pre>
+</div>
+
+<h2>Distinct from what's in use</h2>
+<p>15.1 CIELAB units from the nearest existing foreground, <code>#98a288</code> (module names), and 62.7 from the italic purple of <code>async</code> / <code>mut</code> / <code>pub</code>. Its hue is cool and its chroma low, so it is not read as the teal of type aliases either.</p>
+<div class="sw">
+  <div class="chip" style="--c:#8fb3ad"><i></i><div>#8fb3ad<span>proposed</span></div></div>
+  <div class="chip" style="--c:#98a288"><i></i><div>#98a288<span>nearest: modules, 15.1 away</span></div></div>
+  <div class="chip" style="--c:#9d7cd8"><i></i><div>#9d7cd8<span>async / mut / pub, italic</span></div></div>
+</div>
+
+<h2>Readable</h2>
+<p>Contrast on <code>#1a1b26</code> is 7.5:1, well above the 4.5:1 minimum (scale 0 to 8:1).</p>
+<div class="bar" style="--c:#8fb3ad"><b style="width:93.75%">#8fb3ad · 7.5:1</b><u style="left:56.25%"></u><em style="left:56.25%">4.5 minimum</em></div>
+
+<h2>Alternative</h2>
+<p><code>#85b09a</code> (coolors: Muted Teal) is greener and a little darker, at 7.1:1 and 12.5 from its nearest color. Take it if sea-mist looks too grey on your screen.</p>
+<div class="row">
+  <div><span class="t">Describe</span><small>#8fb3ad · 7.5:1</small></div>
+  <div><span class="t" style="color:var(--h2)">Describe</span><small>#85b09a · 7.1:1</small></div>
+</div>
+<div class="bar" style="--c:#85b09a;margin-top:20px"><b style="width:88.75%">#85b09a · 7.1:1</b><u style="left:56.25%"></u></div>
+
+<h2>Consuming methods: bold</h2>
+<p>Methods that take <code>self</code> by value (rust-analyzer's <code>consuming</code> modifier) move their receiver. Rule: <code>"method.consuming": { "foreground": "#7aa2f7", "bold": true }</code>. Same blue, heavier weight. <code>iter</code> only borrows, so it stays regular.</p>
+<div class="cols">
+<pre><small style="color:var(--mut)">Now</small>
+<span class="kw">let</span> squares: Vec&lt;i32&gt; = items
+    .<span class="fn">iter</span>()
+    .<span class="fn">map</span>(|n| n * n)
+    .<span class="fn">collect</span>();
+<span class="kw">let</span> n = text.<span class="fn">trim</span>().<span class="fn">parse</span>().<span class="fn">unwrap</span>();</pre>
+<pre><small style="color:var(--mut)">Bold</small>
+<span class="kw">let</span> squares: Vec&lt;i32&gt; = items
+    .<span class="fn">iter</span>()
+    .<span class="fn b">map</span>(|n| n * n)
+    .<span class="fn b">collect</span>();
+<span class="kw">let</span> n = text.<span class="fn">trim</span>().<span class="fn">parse</span>().<span class="fn b">unwrap</span>();</pre>
+</div>
+
+<h2>Attributes: rust</h2>
+<p>Attributes (<code>#[derive]</code>, <code>#[inline]</code>, <code>#![allow]</code>) are italic dusty mauve <code>#b59ba8</code>, shared with Python decorators. Proposal: iron-oxide orange <code>#cc6a3d</code>, italic. 19.2 CIELAB units from the nearest existing color (<code>#ff9e64</code>, booleans), 4.6:1 contrast on <code>#1a1b26</code>. It is darker and redder than the read-only orange <code>#e1a58c</code> and the number pink, so it stays an accent.</p>
+<div class="cols">
+<pre><small style="color:var(--mut)">Now</small>
+<span class="at0">#![allow(dead_code)]</span>
+<span class="at0">#[derive(Debug, Clone)]</span>
+<span class="kw">struct</span> <span class="ty">City</span> { name: String }
+<span class="at0">#[inline]</span>
+<span class="kw">fn</span> <span class="fn">tokyo</span>() -&gt; <span class="ty">City</span> { <span class="ty">City</span> { name: <span class="s">"Tokyo"</span>.into() } }</pre>
+<pre><small style="color:var(--mut)">Proposed</small>
+<span class="at">#![allow(dead_code)]</span>
+<span class="at">#[derive(Debug, Clone)]</span>
+<span class="kw">struct</span> <span class="ty">City</span> { name: String }
+<span class="at">#[inline]</span>
+<span class="kw">fn</span> <span class="fn">tokyo</span>() -&gt; <span class="ty">City</span> { <span class="ty">City</span> { name: <span class="s">"Tokyo"</span>.into() } }</pre>
+</div>
+<div class="sw" style="margin-top:14px">
+  <div class="chip" style="--c:#cc6a3d"><i></i><div>#cc6a3d<span>proposed, 4.6:1</span></div></div>
+  <div class="chip" style="--c:#c47a4f"><i></i><div>#c47a4f<span>softer alternative, 5.1:1, 19.5 away</span></div></div>
+  <div class="chip" style="--c:#b59ba8"><i></i><div>#b59ba8<span>now</span></div></div>
+  <div class="chip" style="--c:#ff9e64"><i></i><div>#ff9e64<span>nearest: booleans</span></div></div>
+</div>
+
+<h2>Macro calls: mint</h2>
+<p>Macros are functions that write code at compile time, but they share the function blue <code>#7aa2f7</code>, so <code>println!</code> looks like any call. Orchid was too close to the purple of <code>async</code>, and amber too close to the boolean orange (hues 45&deg; vs 22&deg;, with the parameter tan at 36&deg; in between). The warm band is crowded; the free gap is hue 150&deg;, between string green (89&deg;) and teal (171&deg;). Proposal: mint <code>#55e7a3</code> for the name and the <code>!</code>, regular weight. Rules: <code>"macro"</code> and <code>"macro.defaultLibrary"</code>.</p>
+<div class="cols">
+<pre><small style="color:var(--mut)">Now</small>
+<span class="kw">let</span> items = <span class="m0">vec!</span>[3, 1, 2];
+<span class="m0">println!</span>(<span class="s">"{}"</span>, <span class="fn">total</span>(&amp;items));
+<span class="m0">assert_eq!</span>(<span class="fn">square</span>(3), <span class="bl">true</span>);
+<span class="kw">macro_rules!</span> <span class="m0">square</span> { ... }</pre>
+<pre><small style="color:var(--mut)">Proposed</small>
+<span class="kw">let</span> items = <span class="m1">vec!</span>[3, 1, 2];
+<span class="m1">println!</span>(<span class="s">"{}"</span>, <span class="fn">total</span>(&amp;items));
+<span class="m1">assert_eq!</span>(<span class="fn">square</span>(3), <span class="bl">true</span>);
+<span class="kw">macro_rules!</span> <span class="m1">square</span> { ... }</pre>
+</div>
+<div class="sw" style="margin-top:14px">
+  <div class="chip" style="--c:#55e7a3"><i></i><div>#55e7a3<span>proposed: mint, 10.9:1, 31.1 from nearest (#73daca), 89 from bool</span></div></div>
+  <div class="chip" style="--c:#ff9e64"><i></i><div>#ff9e64<span>booleans</span></div></div>
+  <div class="chip" style="--c:#ffc107"><i></i><div>#ffc107<span>amber, dropped: 44 from bool</span></div></div>
+  <div class="chip" style="--c:#9ece6a"><i></i><div>#9ece6a<span>strings</span></div></div>
+  <div class="chip" style="--c:#73daca"><i></i><div>#73daca<span>teal, nearest</span></div></div>
+</div>
+
+<h3 style="font-size:14px;margin:22px 0 6px">Your suggestion: rosy taupe <span style="color:#bc8f8f">#bc8f8f</span></h3>
+<p>Coolors: Rosy Taupe. Dusty rose-brown, 6.1:1 contrast. Nearest existing colors: <code>#b59ba8</code> (Python decorators) 11.5 away, and <code>#ca7e89</code> (<code>self</code> / <code>Self</code>) 14.1 away. Compare it with <code>self</code> below, since both appear in the same code.</p>
+<div class="cols">
+<pre><small style="color:var(--mut)">Mint #55e7a3</small>
+<span class="kw">fn</span> <span class="fn">show</span>(&amp;<span class="se">self</span>) {
+    <span class="m1">println!</span>(<span class="s">"{}"</span>, <span class="se">self</span>.name);
+}</pre>
+<pre><small style="color:var(--mut)">Rosy taupe #bc8f8f</small>
+<span class="kw">fn</span> <span class="fn">show</span>(&amp;<span class="se">self</span>) {
+    <span class="rt">println!</span>(<span class="s">"{}"</span>, <span class="se">self</span>.name);
+}</pre>
+</div>
+
+<h2>self: lemon lime + macros: rosy taupe</h2>
+<p><code>self</code> / <code>Self</code> in lemon lime <code>#d1e231</code> (coolors: Lemon Lime): 11.9:1 contrast, 30.9 CIELAB units from the nearest existing color (<code>#ffdb69</code>), 34.3 from string green <code>#9ece6a</code>. With <code>self</code> moved out of rose, rosy taupe <code>#bc8f8f</code> for macros no longer clashes with it; its nearest colors are then <code>#e1a58c</code> (read-only orange, 17.7 away) and Python's decorator mauve (not used in Rust). Rules: <code>"selfKeyword"</code>, <code>"selfTypeKeyword"</code>; the <code>self</code> in a signature stays tan.</p>
+<div class="cols">
+<pre><small style="color:var(--mut)">Now</small>
+<span class="kw">impl</span> <span class="ty">City</span> {
+    <span class="kw">fn</span> <span class="fn">show</span>(&amp;<span class="tan">self</span>) -&gt; <span class="se">Self</span> {
+        <span class="m0">println!</span>(<span class="s">"{}"</span>, <span class="se">self</span>.name);
+        <span class="se">self</span>.<span class="fn">clone</span>()
+    }
+}</pre>
+<pre><small style="color:var(--mut)">Proposed</small>
+<span class="kw">impl</span> <span class="ty">City</span> {
+    <span class="kw">fn</span> <span class="fn">show</span>(&amp;<span class="tan">self</span>) -&gt; <span class="ll">Self</span> {
+        <span class="rt">println!</span>(<span class="s">"{}"</span>, <span class="ll">self</span>.name);
+        <span class="ll">self</span>.<span class="fn">clone</span>()
+    }
+}</pre>
+</div>
+<div class="sw" style="margin-top:14px">
+  <div class="chip" style="--c:#d1e231"><i></i><div>#d1e231<span>self / Self, 11.9:1</span></div></div>
+  <div class="chip" style="--c:#bc8f8f"><i></i><div>#bc8f8f<span>macros, 6.1:1</span></div></div>
+  <div class="chip" style="--c:#ca7e89"><i></i><div>#ca7e89<span>self now</span></div></div>
+  <div class="chip" style="--c:#9ece6a"><i></i><div>#9ece6a<span>strings</span></div></div>
+</div>
+
+<h3 style="font-size:14px;margin:22px 0 6px">Your suggestion: pastel pink <span style="color:#ffc0cb">#ffc0cb</span> for self</h3>
+<p>Coolors: Pastel Pink. 11.1:1 contrast; nearest existing color is the number pink <code>#f19cbb</code>, 16.5 away; 21.5 from rosy taupe, 25.6 from the enum-variant peach <code>#ffcba4</code>. It keeps <code>self</code> in the rose family it has now, just brighter.</p>
+<div class="cols">
+<pre><small style="color:var(--mut)">Lemon lime #d1e231 + rosy taupe macros</small>
+<span class="kw">fn</span> <span class="fn">show</span>(&amp;<span class="tan">self</span>) -&gt; <span class="ll">Self</span> {
+    <span class="rt">println!</span>(<span class="s">"{}"</span>, <span class="ll">self</span>.id + <span class="num">42</span>);
+    <span class="ll">self</span>.<span class="fn">clone</span>()
+}</pre>
+<pre><small style="color:var(--mut)">Pastel pink #ffc0cb + rosy taupe macros</small>
+<span class="kw">fn</span> <span class="fn">show</span>(&amp;<span class="tan">self</span>) -&gt; <span class="pp">Self</span> {
+    <span class="rt">println!</span>(<span class="s">"{}"</span>, <span class="pp">self</span>.id + <span class="num">42</span>);
+    <span class="pp">self</span>.<span class="fn">clone</span>()
+}</pre>
+</div>
+
+<h3 style="font-size:14px;margin:22px 0 6px">Your suggestion: light gold <span style="color:#eedc82">#eedc82</span> for self</h3>
+<p>Coolors: Light Gold. 12.4:1 contrast. Nearest existing colors: <code>#ffdb69</code> 14.3 away, and the parameter / <code>&amp;self</code> tan <code>#e0af68</code> 20.4 away. The signature <code>&amp;self</code> and the <code>self</code> in the body would be two shades of gold.</p>
+<div class="cols">
+<pre><small style="color:var(--mut)">Light gold #eedc82</small>
+<span class="kw">fn</span> <span class="fn">show</span>(&amp;<span class="tan">self</span>, <span class="tan">n</span>: u32) -&gt; <span class="lg">Self</span> {
+    <span class="rt">println!</span>(<span class="s">"{}"</span>, <span class="lg">self</span>.id + <span class="num">42</span>);
+    <span class="lg">self</span>.<span class="fn">clone</span>()
+}</pre>
+<pre><small style="color:var(--mut)">Pastel pink #ffc0cb</small>
+<span class="kw">fn</span> <span class="fn">show</span>(&amp;<span class="tan">self</span>, <span class="tan">n</span>: u32) -&gt; <span class="pp">Self</span> {
+    <span class="rt">println!</span>(<span class="s">"{}"</span>, <span class="pp">self</span>.id + <span class="num">42</span>);
+    <span class="pp">self</span>.<span class="fn">clone</span>()
+}</pre>
+</div>
+
+<h2>Macro calls: silver family</h2>
+<p>Greys and silvers for macro names and their <code>!</code>. Distance is CIELAB units to the nearest existing color; below ~19 a color is easily confused. Plain text is <code>#c0caf5</code>, a blue-tinted grey, and parameter uses are <code>#a9b1d6</code>, so a neutral silver stays close to them. Silver itself is 4.9 from the grey <code>#c2c2cb</code> and will look like plain text; the warmer or greener greys (Ash Grey, Taupe, Rosy Granite) separate better.</p>
+<div class="cols"><pre><small style="color:var(--mut)">Silver <span style="color:#c0c0c0">#c0c0c0</span> &middot; 9.4:1 &middot; 4.9 away</small>
+<span class="kw">let</span> items = <span style="color:#c0c0c0">vec!</span>[3, 1, 2];
+<span style="color:#c0c0c0">println!</span>(<span class="s">"{}"</span>, <span class="fn">total</span>(&amp;items));
+<span class="lg">self</span>.<span class="fn">run</span>(<span style="color:#c0c0c0">format!</span>(<span class="s">"{}"</span>, <span class="num">42</span>));</pre><pre><small style="color:var(--mut)">Ash Grey <span style="color:#b2beb5">#b2beb5</span> &middot; 8.9:1 &middot; 10.2 away</small>
+<span class="kw">let</span> items = <span style="color:#b2beb5">vec!</span>[3, 1, 2];
+<span style="color:#b2beb5">println!</span>(<span class="s">"{}"</span>, <span class="fn">total</span>(&amp;items));
+<span class="lg">self</span>.<span class="fn">run</span>(<span style="color:#b2beb5">format!</span>(<span class="s">"{}"</span>, <span class="num">42</span>));</pre><pre><small style="color:var(--mut)">Cool Steel <span style="color:#91a3b0">#91a3b0</span> &middot; 6.6:1 &middot; 13.3 away</small>
+<span class="kw">let</span> items = <span style="color:#91a3b0">vec!</span>[3, 1, 2];
+<span style="color:#91a3b0">println!</span>(<span class="s">"{}"</span>, <span class="fn">total</span>(&amp;items));
+<span class="lg">self</span>.<span class="fn">run</span>(<span style="color:#91a3b0">format!</span>(<span class="s">"{}"</span>, <span class="num">42</span>));</pre><pre><small style="color:var(--mut)">Taupe <span style="color:#98817b">#98817b</span> &middot; 4.7:1 &middot; 15.0 away</small>
+<span class="kw">let</span> items = <span style="color:#98817b">vec!</span>[3, 1, 2];
+<span style="color:#98817b">println!</span>(<span class="s">"{}"</span>, <span class="fn">total</span>(&amp;items));
+<span class="lg">self</span>.<span class="fn">run</span>(<span style="color:#98817b">format!</span>(<span class="s">"{}"</span>, <span class="num">42</span>));</pre><pre><small style="color:var(--mut)">Rosy Granite <span style="color:#8b8589">#8b8589</span> &middot; 4.7:1 &middot; 13.8 away</small>
+<span class="kw">let</span> items = <span style="color:#8b8589">vec!</span>[3, 1, 2];
+<span style="color:#8b8589">println!</span>(<span class="s">"{}"</span>, <span class="fn">total</span>(&amp;items));
+<span class="lg">self</span>.<span class="fn">run</span>(<span style="color:#8b8589">format!</span>(<span class="s">"{}"</span>, <span class="num">42</span>));</pre><pre><small style="color:var(--mut)">Alabaster Grey <span style="color:#e5e4e2">#e5e4e2</span> &middot; 13.5:1 &middot; 13.3 away</small>
+<span class="kw">let</span> items = <span style="color:#e5e4e2">vec!</span>[3, 1, 2];
+<span style="color:#e5e4e2">println!</span>(<span class="s">"{}"</span>, <span class="fn">total</span>(&amp;items));
+<span class="lg">self</span>.<span class="fn">run</span>(<span style="color:#e5e4e2">format!</span>(<span class="s">"{}"</span>, <span class="num">42</span>));</pre></div>
+
+<h2>Macros vs traits</h2>
+<p>Cool Steel <code>#91a3b0</code> is only 13.3 CIELAB units from the italic trait color <code>#8fb3ad</code>, its nearest neighbor. Each sample shows a trait (<span class="t">Describe</span>) and a macro together. Warmer greys separate from the sea-mist; the number after each name is the distance to its nearest existing color (trait color included).</p>
+<div class="cols"><pre><small style="color:var(--mut)">Cool Steel (now) <span style="color:#91a3b0">#91a3b0</span> &middot; 6.6:1 &middot; 13.3 away</small>
+<span class="kw">impl</span> <span class="t">Describe</span> <span class="kw">for</span> <span class="ty">City</span> {
+    <span class="kw">fn</span> <span class="fn">describe</span>(&amp;<span class="lg">self</span>) -&gt; String {
+        <span style="color:#91a3b0">format!</span>(<span class="s">"{}"</span>, <span class="lg">self</span>.name)
+    }
+}</pre><pre><small style="color:var(--mut)">Taupe (coolors) <span style="color:#98817b">#98817b</span> &middot; 4.7:1 &middot; 19.5 away</small>
+<span class="kw">impl</span> <span class="t">Describe</span> <span class="kw">for</span> <span class="ty">City</span> {
+    <span class="kw">fn</span> <span class="fn">describe</span>(&amp;<span class="lg">self</span>) -&gt; String {
+        <span style="color:#98817b">format!</span>(<span class="s">"{}"</span>, <span class="lg">self</span>.name)
+    }
+}</pre><pre><small style="color:var(--mut)">Taupe, lighter <span style="color:#a8918f">#a8918f</span> &middot; 5.8:1 &middot; 17.9 away</small>
+<span class="kw">impl</span> <span class="t">Describe</span> <span class="kw">for</span> <span class="ty">City</span> {
+    <span class="kw">fn</span> <span class="fn">describe</span>(&amp;<span class="lg">self</span>) -&gt; String {
+        <span style="color:#a8918f">format!</span>(<span class="s">"{}"</span>, <span class="lg">self</span>.name)
+    }
+}</pre><pre><small style="color:var(--mut)">Rosy Granite (coolors) <span style="color:#8b8589">#8b8589</span> &middot; 4.7:1 &middot; 19.9 away</small>
+<span class="kw">impl</span> <span class="t">Describe</span> <span class="kw">for</span> <span class="ty">City</span> {
+    <span class="kw">fn</span> <span class="fn">describe</span>(&amp;<span class="lg">self</span>) -&gt; String {
+        <span style="color:#8b8589">format!</span>(<span class="s">"{}"</span>, <span class="lg">self</span>.name)
+    }
+}</pre><pre><small style="color:var(--mut)">Rosy Taupe <span style="color:#bc8f8f">#bc8f8f</span> &middot; 6.1:1 &middot; 17.7 away</small>
+<span class="kw">impl</span> <span class="t">Describe</span> <span class="kw">for</span> <span class="ty">City</span> {
+    <span class="kw">fn</span> <span class="fn">describe</span>(&amp;<span class="lg">self</span>) -&gt; String {
+        <span style="color:#bc8f8f">format!</span>(<span class="s">"{}"</span>, <span class="lg">self</span>.name)
+    }
+}</pre></div>
+</main></body></html>

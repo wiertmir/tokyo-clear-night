@@ -199,10 +199,11 @@
         // Read-only variables: constant orange 35% toward plain text (beats the plain declaration rule).
         "variable.readonly": "#e1a58c",
         "variable.declaration.readonly": "#e1a58c",
-        // Rust (rust-analyzer): std functions/macros stay function blue instead of the std-library cyan.
+        // Rust (rust-analyzer): std functions/methods stay function blue instead of the std-library cyan; macros are Taupe.
         "function.defaultLibrary": "#7aa2f7",
         "method.defaultLibrary": "#7aa2f7",
-        "macro.defaultLibrary": "#7aa2f7",
+        "macro": "#98817b",
+        "macro.defaultLibrary": "#98817b",
         // const/static/enum variants were swallowed by variable.declaration; read-only orange as in Python.
         "const": "#e1a58c",
         "const.declaration": "#e1a58c",
@@ -210,17 +211,22 @@
         "static.declaration": "#e1a58c",
         "constParameter": "#e1a58c",
         "enumMember.declaration": "#ffcba4",
-        // Self / self, as in Python.
-        "selfKeyword": "#ca7e89",
-        "selfTypeKeyword": "#ca7e89",
-        "selfKeyword.declaration": "#e0af68",
+        // Rust self / Self: light gold (Python self/cls keep the muted red above).
+        "selfKeyword": "#eedc82",
+        "selfTypeKeyword": "#eedc82",
+        "selfKeyword.declaration": "#eedc82",
         "property": "#7dcfff",
         "property.declaration": "#73daca",
-        "builtinAttribute": { "foreground": "#b59ba8", "italic": true },
-        "decorator": { "foreground": "#b59ba8", "italic": true },
-        "derive": { "foreground": "#b59ba8", "italic": true },
-        "decorator.defaultLibrary": { "foreground": "#b59ba8", "italic": true },
-        "derive.defaultLibrary": { "foreground": "#b59ba8", "italic": true },
+        "builtinAttribute": { "foreground": "#cc6a3d", "italic": true },
+        "decorator": { "foreground": "#cc6a3d", "italic": true },
+        "derive": { "foreground": "#cc6a3d", "italic": true },
+        "decorator.defaultLibrary": { "foreground": "#cc6a3d", "italic": true },
+        "derive.defaultLibrary": { "foreground": "#cc6a3d", "italic": true },
+        // Traits (rust-analyzer "interface"): italic sea-mist, hazy like an abstraction and clear of the purple italics.
+        "interface": { "foreground": "#8fb3ad", "italic": true },
+        // Methods that take self by value move their receiver: same blue, bold. The std rule is listed too so it wins over "method.defaultLibrary".
+        "method.consuming": { "foreground": "#7aa2f7", "bold": true },
+        "method.defaultLibrary.consuming": { "foreground": "#7aa2f7", "bold": true },
         "*.deprecated": { "strikethrough": true }
     }
 }

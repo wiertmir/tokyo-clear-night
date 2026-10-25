@@ -1,0 +1,540 @@
+AB274F|Cherry Rose|08
+7C0902|Molten Lava|0
+FE6F5E|Vibrant Coral|0
+BF4F51|Blushed Brick|0
+660000|Dark Garnet|0
+FB607F|Bubblegum Pink|08
+800020|Burgundy|027
+FF0800|Electric Red|0
+FDBCB4|Powder Blush|01
+C51E3A|Intense Cherry|0
+960018|Deep Crimson|0
+DE3163|Magenta Bloom|078
+E23D28|Burnt Tangerine|0
+58111A|Night Bordeaux|0
+E44D2E|Fiery Terracotta|0
+7F1734|Dark Amaranth|0
+FF3800|Blazing Flame|0
+F88379|Sweet Salmon|08
+893F45|Burnt Rose|028
+B31B1B|Mahogany Red|0
+DC143C|Classic Crimson|08
+8B0000|Blood Red|0
+801818|Dark Wine|0
+B22222|Brick Red|0
+CE2029|Flag Red|0
+FF004F|Hot Fuchsia|08
+733635|Bitter Chocolate|0
+ED2939|Strawberry Red|0
+CD5C5C|Lobster Pink|0
+D05340|Rosy Copper|0
+F08080|Light Coral|0
+FF7F7F|Grapefruit Pink|0
+A50021|Ruby Red|0
+C04000|Burnt Orange|012
+800000|Maroon|02
+FFE4E1|Soft Blush|089
+FE0000|Pure Red|0
+C08081|Dusty Rose|08
+841617|Crushed Berry|0
+990000|Oxblood|0
+CC3333|Tomato Jam|0
+FFC0CB|Pastel Pink|08
+DC343B|Scarlet Rush|0
+FF0000|Red|0
+A52A2A|Brown Red|02
+ED1B24|Racing Red|0
+EE204E|Watermelon|0
+F2003C|Lipstick Red|0
+C40234|Carmine|0
+ED2839|Punch Red|0
+E60026|Primary Scarlet|0
+FF0080|Neon Pink|08
+674846|Chocolate Plum|08
+C21E56|Rosewood|08
+905D5D|Smoky Rose|08
+AB4E52|Dusty Mauve|08
+65000B|Black Cherry|08
+BC8F8F|Rosy Taupe|08
+B7410E|Rusty Spice|02
+DA2C43|Raspberry|0
+FA8072|Salmon|0
+FF91A4|Cotton Candy|08
+FF2400|Scarlet Fire|0
+D44500|Spicy Orange|0
+F4C2C2|Cotton Rose|08
+FF6347|Tomato|0
+A91101|Inferno|0
+E34234|Cinnabar|0
+722F37|Wine Plum|0
+FF4F00|Flame Orange|1
+C46210|Burnt Caramel|1
+FFBF00|Amber Gold|13
+FBCEB1|Peach Fuzz|13
+FF9966|Tangerine Dream|1
+964B00|Chocolate Brown|1
+BF5700|Autumn Ember|1
+E09540|Golden Apricot|1
+ED9121|Carrot Orange|1
+F7E7CE|Champagne Mist|139
+FF7F50|Coral Glow|18
+FF8C00|Dark Orange|1
+EDC9AF|Desert Sand|12
+BA160C|Brick Ember|1
+E25822|Spicy Paprika|1
+FE5A1D|Tiger Flame|1
+FFD700|Gold|13
+F04A00|Molten Orange|1
+DAA520|Goldenrod|123
+E8AC41|Honey Bronze|1
+FED8B1|Soft Apricot|1
+FF7538|Atomic Tangerine|1
+FF5800|Blaze Orange|1
+FFA000|Amber Glow|1
+FFA500|Orange|1
+FF8000|Vivid Tangerine|1
+FFEFD5|Papaya Whip|139
+FFE5B4|Light Apricot|19
+D99058|Toasted Almond|1
+EC5800|Cayenne Red|1
+FF8F00|Deep Saffron|1
+FF7518|Pumpkin Spice|1
+FF7900|Harvest Orange|1
+F4C430|Saffron|1
+E86100|Autumn Leaf|1
+F94D00|Crimson Carrot|1
+F28500|Tiger Orange|1
+CD5700|Bronze Spice|12
+B56917|Copperwood|1
+FF8200|Princeton Orange|1
+F1B42F|Sunflower Gold|1
+EFDECD|Almond Cream|2
+9F8170|Dusty Taupe|2
+F5F5DC|Beige|239
+3D2B1F|Dark Coffee|2b
+3D0C02|Rich Mahogany|2b
+3B3C36|Charcoal Brown|2b
+79443B|Clay Soil|2
+E3DAC9|Bone|29
+CD7F32|Bronze|2
+993300|Rust Brown|2
+AF6E4D|Cinnamon Wood|2
+DAA06D|Light Bronze|2
+E97451|Burnt Peach|2
+8A3324|Chestnut|2
+C19A6B|Camel|23
+592720|Espresso|27
+CC7F3B|Golden Chestnut|2
+A0785A|Faded Copper|2
+954535|Reddish Brown|2
+7B3F00|Raw Umber|2
+DDD06A|Golden Sand|23
+D2691E|Chocolate|2
+6F4E37|Coffee Bean|2
+B87333|Copper|2
+81613E|Olive Wood|2
+4A412A|Dark Khaki|2
+DAC8AE|Pale Oak|2
+E1A95F|Sunlit Clay|2
+C2B280|Sand|2
+E5AA70|Light Caramel|2
+6C541E|Olive Bark|2
+E48400|Amber Earth|2
+996515|Golden Earth|2
+DA9100|Harvest Gold|2
+C3B091|Khaki Beige|23
+6B4423|Brown Bark|2
+674C47|Mauve Bark|2
+CC7722|Ochre|2
+926644|Toffee Brown|2
+A45A52|Terracotta Clay|2
+A81C07|Oxidized Iron|2
+80461B|Saddle Brown|2
+F4A460|Sandy Brown|2
+CBA135|Golden Bronze|2
+59260B|Dark Walnut|2
+704214|Walnut|2
+882D17|Brandy|2
+CB410B|Red Ochre|2
+D2B48C|Tan|2
+483C32|Taupe|2b
+635147|Ash Brown|2
+44362F|Deep Mocha|2
+5C5248|Stone Brown|2
+645452|Taupe Grey|2
+F5DEB3|Wheat|23
+E9D66B|Straw Gold|3
+FDEE00|Bright Lemon|3
+E0AB76|Sandy Clay|3
+FFEF00|Sunbeam Yellow|3
+DFFF00|Lime Yellow|3
+E4D00A|Golden Glow|3
+FFF8E7|Ivory Mist|39
+FFFDD0|Cream|39
+B8860B|Dark Goldenrod|3
+CDB280|Soft Fawn|3
+EEDC82|Light Gold|39
+EF9B0F|Golden Orange|3
+D4AF37|Metallic Gold|3
+E6A817|Amber Honey|3
+FCF75E|Canary Yellow|3
+FFFFF0|Ivory|39
+F8DE7E|Jasmine|3
+FACA16|Bright Amber|3
+FFFACD|Lemon Chiffon|39
+E3FF00|Neon Chartreuse|3
+FFFFE0|Light Yellow|3
+FBEC5D|Banana Cream|3
+FFC40C|School Bus Yellow|3
+E3F988|Lime Cream|34
+FFDB58|Mustard|3
+FADA5E|Royal Gold|3
+FFDEAD|Navajo White|39
+CFB53B|Old Gold|3
+808000|Olive|34
+FADFAD|Soft Peach|3
+D1E231|Lemon Lime|34
+F4C431|Tuscan Sun|3
+FFD800|Bright Gold|3
+FFBA00|Amber Flame|3
+E4D96F|Pale Amber|3
+FFCC33|Golden Pollen|3
+FAD6A5|Apricot Cream|3
+F3E5AB|Vanilla Custard|39
+FFFF00|Yellow|3
+8DB600|Lime Moss|4
+00FFBF|Tropical Mint|4
+7BA05B|Sage Green|4
+568203|Forest Moss|4
+66FF00|Neon Grass|4
+004225|Deep Forest|4
+1B4D3E|Pine Teal|4
+1E4D2B|Dark Spruce|4
+00563B|Emerald Depths|4
+ACE1AF|Celadon|4
+80FF00|Lime Flash|4
+00FFFF|Cyan|45
+013220|Evergreen|4
+4A5D23|Olive Leaf|4
+03C03C|Jade Green|4
+177245|Turf Green|4
+00693E|Dark Emerald|4
+50C878|Emerald|4
+00FF40|Electric Green|4
+4F7942|Fern|4
+228B22|Forest Green|4
+00FF00|Lime|4
+ADFF2F|Green Yellow|4
+3FFF00|Spring Laser|4
+F0FFF0|Honeydew|49
+49796B|Deep Teal|4
+355E3B|Hunter Green|4
+138808|India Green|4
+00A86B|Jungle Green|4
+29AB87|Seaweed|45
+4CBB17|Bright Fern|4
+7CFC00|Lawn Green|4
+90EE90|Light Green|4
+C0FF00|Chartreuse|4
+32CD32|Lime Green|4
+0BDA51|Malachite|4
+74C365|Moss Green|4
+004953|Dark Teal|4
+3EB489|Mint Leaf|45
+8A9A5B|Palm Leaf|4
+317873|Pine Blue|45
+39FF14|Laser Green|4
+008000|Green|4
+9AB973|Muted Olive|4
+00401A|Black Forest|4
+00A693|Verdigris|45
+00A550|Medium Jungle|4
+01796F|Blue Spruce|45
+93C572|Willow Green|4
+6C7C59|Dusty Olive|4
+00CCCC|Strong Cyan|45
+BCB88A|Dry Sage|4
+76FF7A|Mint Glow|4
+2E8B57|Sea Green|45
+55DD33|Radioactive Grass|4
+009E60|Shamrock|4
+A7FC00|Slime Lime|4
+00FF7F|Spring Green|45
+D0F0C0|Tea Green|4
+008080|Teal|45
+40E0D0|Turquoise|45
+40826D|Jungle Teal|4
+9ACD32|Yellow Green|4
+F0F8FF|Alice Blue|569
+0FFFFF|Cyan Glow|5
+7FFFD4|Aquamarine|5
+007FFF|Azure Blue|56
+F0FFFF|Azure Mist|59
+0D98BA|Blue Green|5
+00BFFF|Deep Sky Blue|56
+006D6F|Stormy Teal|5
+B2FFFF|Icy Aqua|5
+007BA7|Cerulean|56
+008B8B|Dark Cyan|5
+7DF9FF|Electric Aqua|5
+15F4EE|Neon Ice|5
+3AB09E|Ocean Mist|5
+99FFFF|Soft Cyan|56
+E0FFFF|Light Cyan|5
+20B2AA|Light Sea Green|5
+DFFFFD|Frozen Water|5
+3AA8C1|Pacific Blue|5
+1CA9C9|Turquoise Surf|5
+00B7EB|Bright Sky|5
+007A74|Deep Ocean|5
+81D8D0|Pearl Aqua|5
+43B3AE|Tropical Teal|5
+00CCFF|Sky Aqua|5
+39A78D|Seagrass|5
+00B9E8|Sky Surge|6
+5D8AA8|Air Force Blue|6
+72A0C1|Steel Blue|6
+6CB4EE|Cool Sky|6
+0070BB|Bright Marine|6
+89CFF0|Baby Blue|6
+003262|Oxford Navy|6
+2072AF|Cornflower Ocean|6
+318CE7|Brilliant Azure|6
+0000FF|Blue|6
+6699CC|Blue Grey|6
+0095B6|Bondi Blue|6
+0070FF|Digital Blue|6
+3457D5|Royal Azure|6
+85B09A|Muted Teal|6
+7BAFD4|Sky Reflection|6
+4997D0|Blue Bell|6
+246BCE|Sapphire Sky|6
+468FEA|Blue Energy|6
+3B00DB|Ultrasonic Blue|6
+0047AB|Cobalt Blue|6
+B9D9EB|Pale Sky|6
+6495ED|Cornflower Blue|6
+1F75FE|Crayola Blue|6
+0000B8|True Azure|6
+1F305E|Twilight Indigo|6
+1560BD|Tech Blue|6
+1E90FF|Dodger Blue|6
+00009C|Navy Electric|6
+1034A6|Egyptian Blue|6
+16166B|Deep Twilight|6
+6082B6|Glaucous|6a
+1164B4|Ocean Deep|6
+6F00FF|Electric Indigo|67
+0072BB|Twitter Blue|6
+4B0082|Indigo|67
+00416A|Yale Blue|6
+002FA7|International Klein Blue|6
+8AB9F1|Baby Blue Ice|6
+26619C|Baltic Blue|6
+ADD8E6|Light Blue|6
+87CEFA|Sky Blue|6
+6050DC|Majorelle Blue|67
+2B4593|French Blue|6
+73C2FB|Maya Blue|6
+0000CD|Medium Blue|6
+7B68EE|Medium Slate Blue|67
+191970|Midnight Blue|6b
+0093AF|Pacific Cyan|6
+000080|Navy|6
+0087BD|Ocean Blue|6
+4666FF|Electric Sapphire|6
+A4DDED|Frosted Blue|6
+002147|Prussian Blue|6
+273BE2|Bright Indigo|6
+87D3F8|Frozen Lake|6
+011F5B|Deep Navy|6
+CCCCFF|Periwinkle|67
+1C39BB|Persian Blue|6
+000F89|Electric Royal|6
+45B1E8|Fresh Sky|6
+224C98|Steel Azure|6
+9EB9D4|Powder Blue|6
+003153|Deep Space Blue|6
+002387|True Cobalt|6
+2454FF|Full Spectrum Blue|6
+4169E1|Royal Blue|6
+002366|Imperial Blue|6
+76ABDF|Cool Horizon|6
+0F52BA|Sapphire|6
+0076B6|Bright Teal Blue|6
+4B61D1|Slate Indigo|6
+5D89BA|Dusty Denim|6
+87CEEB|Sky Blue (Light)|6
+1E2952|Space Indigo|6
+4682B4|Steel Blue|6
+0059CF|Laser Blue|6
+2D68C4|Smart Blue|6
+3E8EDE|Bright Ocean|6
+2774AE|Rich Cerulean|6
+120A8F|Dark Ultramarine|6
+4B92DB|Cloudy Sky|6
+AFDBF5|Icy Blue|6
+324AB2|Ocean Twilight|6
+7C9ED9|Wisteria Blue|6
+00356B|Regal Navy|6
+2E5090|Dusk Blue|6
+0014A8|Vivid Royal|6
+B284BE|Amethyst Smoke|78
+9966CC|Lavender Purple|7
+8A2BE2|Blue Violet|7
+702963|Royal Plum|7
+856088|Dusty Lavender|78
+301934|Midnight Violet|7b
+9400D3|Dark Violet|7
+614051|Mauve Shadow|78
+BF00FF|Hyper Magenta|7
+8F00FF|Violet Ray|7
+563C5C|Vintage Grape|78
+6C3082|Velvet Orchid|7
+F2C1D1|Pastel Petal|78
+B53389|Raspberry Plum|78
+D473D4|Orchid Mist|7
+8806CE|Royal Violet|7
+FF00FF|Magenta|78
+6F2DA8|Indigo Bloom|7
+DF73FF|Mauve Magic|78
+5A4FCF|Violet Twilight|7
+5B3256|Blackberry Cream|78
+FFF0F5|Lavender Blush|789
+B57EDC|Bright Lavender|7
+E6E6FA|Lavender|7
+C8A2C8|Lilac|7
+880085|Dark Magenta|7
+E0B0FF|Mauve|7
+8D029B|Royal Orchid|7
+997A8D|Dusty Mauve|78
+C54B8C|Fuchsia Plum|78
+8B004B|Dark Raspberry|7
+DA70D6|Orchid|78
+682860|Deep Purple|7
+FAE6FA|Lavender Veil|7
+32127A|Indigo Ink|7
+DF00FF|Neon Violet|78
+DBB2D1|Pink Orchid|7
+DDA0DD|Plum|7
+86608E|Vintage Lavender|7
+CC8899|Old Rose|78
+800080|Purple|78
+9A4EAE|Amethyst|7
+663399|Rebecca Purple|7
+7851A9|Deep Lilac|7
+C71585|Medium Violet Red|78
+32174D|Dark Amethyst|7b
+6A5ACD|Slate Blue|7
+CC33CC|Vivid Orchid|78
+512888|Indigo Velvet|7
+D8BFD8|Thistle|7
+9683EC|Soft Periwinkle|7
+66023C|Crimson Violet|7
+645394|Dusty Grape|7
+A020F0|Purple (X11)|7
+8000FF|Ultra Violet|7
+C9A0DC|Wisteria|7
+E52B50|Amaranth|8
+FF91AF|Cotton Candy|8
+8B008B|Dark Magenta|8
+683068|Velvet Purple|8
+FF1DCE|Neon Fuchsia|8
+CA1F7B|Hot Rose|8
+FF0090|Barbie Pink|8
+F653A6|Deep Pink|8
+D0417E|Rose Punch|8
+9F4576|Berry Blush|8
+8E4585|Grape Soda|8
+FE4EDA|Cotton Bloom|8
+8E3A59|Vintage Berry|8
+E30B5C|Raspberry Red|8
+FF33CC|Fuchsia Pop|8
+FF66CC|Bubblegum Fizz|8
+AA98A9|Lilac Ash|8a
+FC0FC0|Shocking Pink|8
+FF6FFF|Bright Peony|8
+CF71AF|Petal Pink|8
+CF3476|Hot Berry|8
+EE82EE|Violet|8
+F19CBB|Pink Mist|8
+DE5D83|Blush Rose|8
+FFA6C9|Baby Pink|8
+F1DDCF|Powder Petal|8
+FFB7C5|Cherry Blossom|8
+A8516E|Rosewood|8
+F56FA1|Rose Kiss|8
+FF1493|Deep Pink|8
+D71868|Berry Lipstick|8
+F64A8A|Wild Strawberry|8
+C74375|Rose Wine|8
+F400A1|Electric Rose|8
+FF00CC|Neon Rose|8
+FF69B4|Hot Pink (Web)|8
+FBAED2|Blush Pop|8
+E4007C|Fuchsia Flame|8
+FFDAE9|Petal Frost|8
+F2BDCD|Soft Blossom|8
+EDCDC2|Almond Silk|8
+FFCBA4|Peach Glow|8
+FE28A2|Brilliant Rose|8
+F77FBE|Pink Carnation|8
+ED7A9B|Petal Rouge|8
+E3256B|Razzmatazz|8
+B3446C|Berry Crush|8
+F9429E|Dragonfruit|8
+FFF5EE|Seashell|89
+FC89AC|Bubblegum Tint|8
+DE6FA1|Sweet Peony|8
+EDEAE0|Soft Linen|9
+F2F3F4|Platinum|9
+FAEBD7|Antique White|9
+FEFEFA|Porcelain|9
+FFF8DC|Cornsilk|9
+EFDFBB|Pearl Beige|9
+F0EAD6|Eggshell|9
+FFFAF0|Floral White|9
+F8F8FF|Ghost White|9
+F4F0EC|Parchment|9
+FAF0E6|Linen|9
+F8F4FF|Lavender Mist|9
+F5FFFA|Mint Cream|9
+E9FFDB|Frosted Mint|9
+FDF5E6|Old Lace|9
+F1E9D2|Vanilla Cream|9
+EAE0C8|Sand Dune|9
+E5E4E2|Alabaster Grey|9a
+F7F7F7|Bright Snow|9
+FFFAFA|Snow|9
+FFFFFF|White|9
+F5F5F5|White Smoke|9a
+DBD7D2|Dust Grey|a
+C0C0C0|Silver|a
+BEBFC5|Pale Slate|a
+B2BEB5|Ash Grey|a
+98817B|Taupe|a
+91A3B0|Cool Steel|a
+8C92AC|Lavender Grey|a
+8B8589|Rosy Granite|a
+848482|Grey Olive|a
+808080|Grey|a
+708090|Slate Grey|a
+696969|Dim Grey|a
+555555|Charcoal|a
+536878|Blue Slate|a
+2A3439|Jet Black|a
+4D5D53|Granite|a
+2F4F4F|Dark Slate Grey|a
+000000|Black|b
+4B3621|Deep Walnut|b
+36454F|Charcoal Blue|b
+555D50|Ebony|b
+1B1B1B|Carbon Black|b
+343434|Graphite|b
+1A1110|Coffee Bean|b
+111111|Onyx|b
+353839|Gunmetal|b
+414A4C|Iron Grey|b
+242124|Shadow Grey|b
+010B13|Ink Black|b
+100C08|Pitch Black|b

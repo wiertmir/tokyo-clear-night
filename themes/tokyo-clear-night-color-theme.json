@@ -41,36 +41,49 @@
         "variable.declaration.readonly": "#e1a58c",
         "function.defaultLibrary": "#7aa2f7",
         "method.defaultLibrary": "#7aa2f7",
-        "macro.defaultLibrary": "#7aa2f7",
+        "macro": "#98817b",
+        "macro.defaultLibrary": "#98817b",
         "const": "#e1a58c",
         "const.declaration": "#e1a58c",
         "static": "#e1a58c",
         "static.declaration": "#e1a58c",
         "constParameter": "#e1a58c",
         "enumMember.declaration": "#ffcba4",
-        "selfKeyword": "#ca7e89",
-        "selfTypeKeyword": "#ca7e89",
-        "selfKeyword.declaration": "#e0af68",
+        "selfKeyword": "#eedc82",
+        "selfTypeKeyword": "#eedc82",
+        "selfKeyword.declaration": "#eedc82",
         "property": "#7dcfff",
         "builtinAttribute": {
-            "foreground": "#b59ba8",
+            "foreground": "#cc6a3d",
             "italic": true
         },
         "decorator": {
-            "foreground": "#b59ba8",
+            "foreground": "#cc6a3d",
             "italic": true
         },
         "derive": {
-            "foreground": "#b59ba8",
+            "foreground": "#cc6a3d",
             "italic": true
         },
         "decorator.defaultLibrary": {
-            "foreground": "#b59ba8",
+            "foreground": "#cc6a3d",
             "italic": true
         },
         "derive.defaultLibrary": {
-            "foreground": "#b59ba8",
+            "foreground": "#cc6a3d",
             "italic": true
+        },
+        "interface": {
+            "foreground": "#8fb3ad",
+            "italic": true
+        },
+        "method.consuming": {
+            "foreground": "#7aa2f7",
+            "bold": true
+        },
+        "method.defaultLibrary.consuming": {
+            "foreground": "#7aa2f7",
+            "bold": true
         },
         "*.deprecated": {
             "strikethrough": true

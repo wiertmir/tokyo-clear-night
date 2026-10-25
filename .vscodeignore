@@ -12,3 +12,7 @@ rust_demo/
 rust_demo.ipynb
 make_rust_demo.py
 tokenize_rust.js
+colors.html
+make_colors.py
+coolors_colors.txt
+proposals.html
