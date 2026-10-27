@@ -89,6 +89,19 @@
             "settings": { "foreground": "#51597d", "fontStyle": "italic" }
         },
         {
+            "name": "Doc comments",
+            "scope": [
+                "comment.block.documentation",
+                "comment.line.documentation",
+                "comment.block.documentation punctuation",
+                "string.quoted.docstring",
+                "string.quoted.docstring.multi",
+                "string.quoted.docstring.multi.python punctuation.definition.string.begin",
+                "string.quoted.docstring.multi.python punctuation.definition.string.end"
+            ],
+            "settings": { "foreground": "#00563b", "fontStyle": "italic" }
+        },
+        {
             "name": "TODO / FIXME tags",
             "scope": ["keyword.codetag.notation"],
             "settings": { "foreground": "#e0af68", "fontStyle": "bold" }
@@ -217,11 +230,12 @@
         "selfKeyword.declaration": "#eedc82",
         "property": "#7dcfff",
         "property.declaration": "#73daca",
-        "builtinAttribute": { "foreground": "#cc6a3d", "italic": true },
-        "decorator": { "foreground": "#cc6a3d", "italic": true },
-        "derive": { "foreground": "#cc6a3d", "italic": true },
-        "decorator.defaultLibrary": { "foreground": "#cc6a3d", "italic": true },
-        "derive.defaultLibrary": { "foreground": "#cc6a3d", "italic": true },
+        "comment.documentation": { "foreground": "#00563b", "italic": true },
+        "builtinAttribute": { "foreground": "#e07a64", "italic": true },
+        "decorator": { "foreground": "#e07a64", "italic": true },
+        "derive": { "foreground": "#e07a64", "italic": true },
+        "decorator.defaultLibrary": { "foreground": "#e07a64", "italic": true },
+        "derive.defaultLibrary": { "foreground": "#e07a64", "italic": true },
         // Traits (rust-analyzer "interface"): italic sea-mist, hazy like an abstraction and clear of the purple italics.
         "interface": { "foreground": "#8fb3ad", "italic": true },
         // Methods that take self by value move their receiver: same blue, bold. The std rule is listed too so it wins over "method.defaultLibrary".

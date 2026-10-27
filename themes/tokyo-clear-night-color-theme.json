@@ -30,7 +30,7 @@
         "selfParameter.declaration": "#e0af68",
         "clsParameter.declaration": "#e0af68",
         "*.decorator": {
-            "foreground": "#b59ba8",
+            "foreground": "#e07a64",
             "italic": true
         },
         "parameter.keywordArgument": "#cab094",
@@ -53,24 +53,28 @@
         "selfTypeKeyword": "#eedc82",
         "selfKeyword.declaration": "#eedc82",
         "property": "#7dcfff",
+        "comment.documentation": {
+            "foreground": "#00563b",
+            "italic": true
+        },
         "builtinAttribute": {
-            "foreground": "#cc6a3d",
+            "foreground": "#e07a64",
             "italic": true
         },
         "decorator": {
-            "foreground": "#cc6a3d",
+            "foreground": "#e07a64",
             "italic": true
         },
         "derive": {
-            "foreground": "#cc6a3d",
+            "foreground": "#e07a64",
             "italic": true
         },
         "decorator.defaultLibrary": {
-            "foreground": "#cc6a3d",
+            "foreground": "#e07a64",
             "italic": true
         },
         "derive.defaultLibrary": {
-            "foreground": "#cc6a3d",
+            "foreground": "#e07a64",
             "italic": true
         },
         "interface": {
@@ -1660,6 +1664,22 @@
             }
         },
         {
+            "name": "Doc comments",
+            "scope": [
+                "comment.block.documentation",
+                "comment.line.documentation",
+                "comment.block.documentation punctuation",
+                "string.quoted.docstring",
+                "string.quoted.docstring.multi",
+                "string.quoted.docstring.multi.python punctuation.definition.string.begin",
+                "string.quoted.docstring.multi.python punctuation.definition.string.end"
+            ],
+            "settings": {
+                "foreground": "#00563b",
+                "fontStyle": "italic"
+            }
+        },
+        {
             "name": "TODO / FIXME tags",
             "scope": [
                 "keyword.codetag.notation"
@@ -1718,7 +1738,7 @@
                 "punctuation.definition.decorator.python"
             ],
             "settings": {
-                "foreground": "#b59ba8",
+                "foreground": "#e07a64",
                 "fontStyle": "italic"
             }
         },
