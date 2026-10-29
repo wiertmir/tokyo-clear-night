@@ -99,7 +99,7 @@
                 "string.quoted.docstring.multi.python punctuation.definition.string.begin",
                 "string.quoted.docstring.multi.python punctuation.definition.string.end"
             ],
-            "settings": { "foreground": "#00563b", "fontStyle": "italic" }
+            "settings": { "foreground": "#2f5a4b", "fontStyle": "italic" }
         },
         {
             "name": "TODO / FIXME tags",
@@ -230,7 +230,7 @@
         "selfKeyword.declaration": "#eedc82",
         "property": "#7dcfff",
         "property.declaration": "#73daca",
-        "comment.documentation": { "foreground": "#00563b", "italic": true },
+        "comment.documentation": { "foreground": "#2f5a4b", "italic": true },
         "builtinAttribute": { "foreground": "#e07a64", "italic": true },
         "decorator": { "foreground": "#e07a64", "italic": true },
         "derive": { "foreground": "#e07a64", "italic": true },

@@ -30,7 +30,7 @@
         "selfParameter.declaration": "#e0af68",
         "clsParameter.declaration": "#e0af68",
         "*.decorator": {
-            "foreground": "#e07a64",
+            "foreground": "#b59ba8",
             "italic": true
         },
         "parameter.keywordArgument": "#cab094",
@@ -54,7 +54,7 @@
         "selfKeyword.declaration": "#eedc82",
         "property": "#7dcfff",
         "comment.documentation": {
-            "foreground": "#00563b",
+            "foreground": "#2f5a4b",
             "italic": true
         },
         "builtinAttribute": {
@@ -1675,7 +1675,7 @@
                 "string.quoted.docstring.multi.python punctuation.definition.string.end"
             ],
             "settings": {
-                "foreground": "#00563b",
+                "foreground": "#2f5a4b",
                 "fontStyle": "italic"
             }
         },
@@ -1738,7 +1738,7 @@
                 "punctuation.definition.decorator.python"
             ],
             "settings": {
-                "foreground": "#e07a64",
+                "foreground": "#b59ba8",
                 "fontStyle": "italic"
             }
         },
