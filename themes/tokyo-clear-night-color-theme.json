@@ -1635,6 +1635,24 @@
             }
         },
         {
+            "name": "Markdown List Bullet",
+            "scope": [
+                "punctuation.definition.list.begin.markdown"
+            ],
+            "settings": {
+                "foreground": "#9ece6a"
+            }
+        },
+        {
+            "name": "Markdown Horizontal Rule",
+            "scope": [
+                "meta.separator.markdown"
+            ],
+            "settings": {
+                "foreground": "#B57EDC"
+            }
+        },
+        {
             "name": "Class Name",
             "scope": [
                 "entity.name.type.class",

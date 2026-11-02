@@ -70,6 +70,18 @@
     // Named colors are from https://coolors.co/colors.
     "tokenColors": [
         {
+            // Markdown list bullets (-, *, 1.). Tokyo Night green.
+            "name": "Markdown List Bullet",
+            "scope": ["punctuation.definition.list.begin.markdown"],
+            "settings": { "foreground": "#9ece6a" }
+        },
+        {
+            // Markdown horizontal rule (---). Lavender.
+            "name": "Markdown Horizontal Rule",
+            "scope": ["meta.separator.markdown"],
+            "settings": { "foreground": "#B57EDC" }
+        },
+        {
             // Class names were plain foreground. Fresh Sky: saturated, and away from the function blue.
             // Semantic "class" tokens fall back to this scope, so class usages match too.
             "name": "Class Name",
