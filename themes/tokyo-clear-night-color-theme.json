@@ -329,7 +329,7 @@
         "walkThrough.embeddedEditorBackground": "#16161e",
         "textLink.foreground": "#6183bb",
         "textLink.activeForeground": "#7dcfff",
-        "textPreformat.foreground": "#e0af68cc",
+        "textPreformat.foreground": "#e0af6899",
         "textBlockQuote.background": "#16161e",
         "textCodeBlock.background": "#16161e",
         "textSeparator.foreground": "#363b54",
@@ -1641,7 +1641,7 @@
                 "markup.inline.raw.string.markdown"
             ],
             "settings": {
-                "foreground": "#e0af68cc"
+                "foreground": "#e0af6899"
             }
         },
         {
