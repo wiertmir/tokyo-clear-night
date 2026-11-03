@@ -62,13 +62,24 @@
         "notebook.focusedEditorBorder": "#73daca80",
         "notebook.focusedCellBorder": "#73daca",
         "notebook.cellToolbarSeparator": "#3b4261",
-        "notebook.outputContainerBackgroundColor": "#2d3040"
+        "notebook.outputContainerBackgroundColor": "#2d3040",
+
+        // Inline `code`: Tokyo Night yellow (as Midnight Slate renders it in the preview), a bit transparent;
+        // background half of VS Code's default #ffffff1a.
+        "textPreformat.foreground": "#e0af68cc",
+        "textPreformat.background": "#ffffff0d"
     },
     // Use Pylance/language-server tokens on top of TextMate (Tokyo Night leaves this off,
     // so its semanticTokenColors were never applied).
     "semanticHighlighting": true,
     // Named colors are from https://coolors.co/colors.
     "tokenColors": [
+        {
+            // Markdown inline `code` (text and backticks) was fenced-code cyan; match textPreformat.foreground above.
+            "name": "Markdown Inline Code",
+            "scope": ["markup.inline.raw.string.markdown"],
+            "settings": { "foreground": "#e0af68cc" }
+        },
         {
             // Markdown list bullets (-, *, 1.). Tokyo Night green.
             "name": "Markdown List Bullet",

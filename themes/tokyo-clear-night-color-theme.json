@@ -329,7 +329,7 @@
         "walkThrough.embeddedEditorBackground": "#16161e",
         "textLink.foreground": "#6183bb",
         "textLink.activeForeground": "#7dcfff",
-        "textPreformat.foreground": "#9699a8",
+        "textPreformat.foreground": "#e0af68cc",
         "textBlockQuote.background": "#16161e",
         "textCodeBlock.background": "#16161e",
         "textSeparator.foreground": "#363b54",
@@ -452,7 +452,8 @@
         "activityBar.activeBorder": "#73daca",
         "notebook.focusedEditorBorder": "#73daca80",
         "notebook.cellToolbarSeparator": "#3b4261",
-        "notebook.outputContainerBackgroundColor": "#2d3040"
+        "notebook.outputContainerBackgroundColor": "#2d3040",
+        "textPreformat.background": "#ffffff0d"
     },
     "tokenColors": [
         {
@@ -1632,6 +1633,15 @@
             "scope": "source.env",
             "settings": {
                 "foreground": "#7aa2f7"
+            }
+        },
+        {
+            "name": "Markdown Inline Code",
+            "scope": [
+                "markup.inline.raw.string.markdown"
+            ],
+            "settings": {
+                "foreground": "#e0af68cc"
             }
         },
         {
